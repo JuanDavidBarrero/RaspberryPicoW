@@ -1,6 +1,6 @@
 # Important
 
-Para llevar a cabo la comunicación TLS con el broker, es necesario convertir los ficheros de clave privada y certificado a formato "DER", para lo cual se utiliza el siguiente comando
+To carry out the TLS communication with the broker, it is necessary to convert the private key and certificate files to "DER" format, for which the following command is used
 
 ```
 openssl x509 -in client.crt -out certificate.der -outform DER
