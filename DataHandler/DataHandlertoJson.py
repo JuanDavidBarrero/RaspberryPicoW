@@ -47,13 +47,13 @@ ep10 = time.time()
 ep2 = time.time()
 
 while True:
-    if time.time() - ep10 > 10:
+    if time.time() - ep10 > 100:
         last_value = data_handler.read_data()
         if last_value:
             print(f"Last value: {last_value}")
         ep10 = time.time()
 
-    if time.time() - ep2 > 2:
+    if time.time() - ep2 > 1:
         new_item = {
             "num": random.randint(1, 100),
             "num2": random.randint(1, 100)
